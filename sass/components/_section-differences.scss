@@ -1,0 +1,27 @@
+.differences {
+    display: flex;    
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;    
+}
+
+.differences__item {
+    width: 270px;
+    height: 248px;
+
+&:not(:last-child) {
+    margin-right: 30px;
+} 
+}
+
+
+.differences__text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.differences__icon {
+    width: 270px;
+    margin-bottom: 30px;
+    }
+    
