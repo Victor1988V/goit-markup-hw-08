@@ -1,16 +1,26 @@
 .first-title {
+    @media screen and (min-width:480px) and (max-width:1199px){
+        font-size: 26px;
+        line-height: 1.61;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+
+    }
     margin-top: 0;
     margin-bottom: 30px;
     color: var(--primary-bg-color);
-    font-size: 44px;
     font-weight: 900;
-    line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
 }
 
 .second-title {
+    @media screen and (min-width:480px) and (max-width:1199px){
+        margin-bottom: 30px;
+    }
     margin: 0;
     margin-bottom: 50px;
     color: var(--primary-page-color);

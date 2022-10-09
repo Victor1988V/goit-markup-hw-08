@@ -1,5 +1,18 @@
+.section {    
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+        padding-top: 94px;
+        padding-bottom: 94px;
+    
+    
+}
 
 .section-off-padding {
+    @media screen and (min-width:100px) and (max-width:1199px){
+        display: none;
+    }
     padding: 0 0 94px 0;
 }
 
@@ -7,10 +20,6 @@
     background-color: var(--portfolio-button-color);
 }
 
-.section {    
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .section--first {
     display: flex;    
