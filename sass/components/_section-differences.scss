@@ -2,6 +2,7 @@
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;    
+    text-align: center;
     @media screen and (min-width:768px) and (max-width:1199px){
         display: flex; 
         flex-wrap: wrap;
@@ -12,23 +13,24 @@
     }
 }
 
-@media screen and (min-width:1200px) {
-    .differences__item {
+
+
+.differences__item {
+@media screen and (min-width:1200px) {    
     width: 270px;
     height: 248px;
-    
-
-&:not(:last-child) {
+    &:not(:last-child) {
     margin-right: 30px;    
 } 
 }
 }
 
+
+
+
 .differences__item {
     @media screen and (min-width:480px) and (max-width:767px){
         margin-bottom: 30px;
-        text-align: center;
-        width: 450px;
         height: 226px;
     }
     @media screen and (min-width:768px) and (max-width:1199px){        

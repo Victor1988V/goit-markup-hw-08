@@ -11,9 +11,10 @@
     display: flex;
     width: 40px;
     height: 40px;
+    border: none;
     margin: 0;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 14px;
     background-color: transparent;
 @media screen and (min-width:768px) {
     display: none;
@@ -26,8 +27,9 @@
 .mob-btn-close {    
     position: absolute;
     top: 14px;
-    right: 15px;
-
+    right: 20px;
+    border: none;
+    background: transparent;
     display: flex;
     width: 40px;
     height: 40px;

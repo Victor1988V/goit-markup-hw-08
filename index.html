@@ -16,8 +16,8 @@
      <div class="btn-wrapper">
      <button class="header-btn js-open-menu" type=button" aria-expanded="false"
      aria-controls="mobile-menu">
-        <svg class="header__svg" aria-label="переключатель мобильного меню" width="40" height="40">
-        <use class="header-btn__close" href="./images/sprite.svg#close_mob"></use>
+        <svg class="header__svg" aria-label="переключатель мобильного меню" width="30" height="30">
+        <use class="header-btn__close" href="./images/sprite.svg#icon-menu_burg"></use>
         </svg>
      </button>
     </div>
@@ -39,9 +39,9 @@
    </div>
     <div class="mobile-menu js-menu-container" id="mobile-menu">
             <button class="mob-btn-close js-close-menu" type="button">
-                <svg width="40" height="40">
-                    <use class="header-btn__burg " htef="./images/sprite.svg#menu_burg"></use>
-                </svg>
+                <svg class="header__svg" aria-label="переключатель мобильного меню" width="30" height="30">
+                    <use class="header-btn__close" href="./images/sprite.svg#icon-close_mob"></use>
+                    </svg>
             </button>
         <nav class="nav-mobile">  
             <ul class="nav-mobile__list">
@@ -51,28 +51,34 @@
             </ul>
         </nav>
         
-        <ul class="nav-mobile-contact">  
-            <li class="nav-mobile-contact__item"><a href="mailto:info@devstudio.com" class="nav-mobile-contact__link">info@devstudio.com</a></li> 
+        <ul class="nav-mobile-contact">              
             <li class="nav-mobile-contact__item item"><a href="tel:+380961111111" class="nav-mobile-contact__link-tel">+38 096 111 11 11</a></li>
+            <li class="nav-mobile-contact__item"><a href="mailto:info@devstudio.com" class="nav-mobile-contact__link">info@devstudio.com</a></li> 
                                 
-                    <ul class="social">
-                        <li class="social__item">
-                            <a href="#" class="social__link" target="_blank" aria-label="instagram">
+                    <ul class="social-mob">
+                        <div class="social-mob__item-wrapper">
+                        <li class="social-mob__item">
+                            <a href="#" class="social-mob__link" target="_blank" aria-label="instagram">
                                 Instagram
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link" target="_blank" aria-label="twitter">
+                    </div>
+                    <div class="social-mob__item-wrapper">
+                        <li class="social-mob__item">
+                            <a href="#" class="social-mob__link" target="_blank" aria-label="twitter">
                                 Twitter
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link" target="_blank" aria-label="facebook">
+                    </div>
+                    <div class="social-mob__item-wrapper">
+                        <li class="social-mob__item">
+                            <a href="#" class="social-mob__link" target="_blank" aria-label="facebook">
                                 Facebook
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a href="#" class="social__link" target="_blank" aria-label="linkedin">
+                    </div> 
+                        <li class="social-mob__item">
+                            <a href="#" class="social-mob__link" target="_blank" aria-label="linkedin">
                                 Linkedin
                             </a>
                         </li>
@@ -280,6 +286,7 @@
     </section>
 
     <section class="section">
+        <div class="container">
         <h2 class="second-title">Постійні клієнти</h2>
 
         <ul class="client">
@@ -326,11 +333,12 @@
                 </a>
             </li>
         </ul>
+    </div>
     </section> 
 
 </main>
 
-<footer class="footer">        
+<footer class="footer section">        
 
         <div class="container container-footer">
             <div class="logo-footer"><a href="./index.html" class="logo logo-footer"><span          class="accent">Web</span>Studio</a>
@@ -381,7 +389,7 @@
             <p class="three-title three-title--footer">Підпишіться на розсилку</p>
             <form class="form-send">
                                     
-                  <label><input class="form-send__input" type="text" name="mail" placeholder="E-mail"></label>
+                  <label class="form-send__label"><input class="form-send__input" type="text" name="mail" placeholder="E-mail"></label>
                                 
                     <button class="form-send__btn" type="submit"><p class="form-send__discr">Підписатися</p>
                         <svg width="24" height="24">

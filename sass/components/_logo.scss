@@ -4,6 +4,7 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     font-weight: 700;
+    font-family: 'Raleway';
 
     &:hover,
     &:focus {
@@ -37,7 +38,11 @@
 
 .logo-footer {
     display: block;
+    padding: 0;
     margin-bottom: 20px;
     margin-right: 0;
     color: var(--primary-bg-color);
+    @media screen and (min-width:1200px){
+        text-align: start;
+    }
 }

@@ -1,16 +1,38 @@
 
 .footer {
     background-color: #2F303A;
+    text-align: center;
+    @media screen and (min-width:480px) and (max-width:1199px){
+        max-height: 603px;
+    }
+    @media screen and (min-width:1200px){
+        max-height: 252px;
+        // padding: 60px 215px;
+    }   
+    &.section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.container-footer {
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: baseline;
+    }
     
 }
 
 .address-footer__list {
     padding-left: 0;   
     margin: 0;
+    @media screen and (min-width:480px) and (max-width:1199px){
+    margin-bottom: 60px;
+    }
 }
 
 .address-footer__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .address-footer__link {
@@ -33,16 +55,20 @@
     color: var(--accent-color);
    }
 
-
    .social-footer {
-    margin-left: 70px;    
+    @media screen and (min-width:480px) and (max-width:1199px){
+    margin-bottom: 60px;    
+    }
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+        text-align: start;
+    }
 }
 
 .social-list-footer {
     display: flex;
     justify-content: center; 
 }
-
 
 .social-list-footer__link {
     display: flex;
@@ -59,25 +85,32 @@
     &:focus {
    background-color: var(--accent-color);
 }
-
-
 }
-
 
 .social-list-footer__item:not(:last-child) {
     margin-right: 10px;
 }
 
 .send-footer {
-    margin-left: 93px;
+    @media screen and (min-width:1200px) {
+        margin-left: 93px;
+    }
+    
 }
 
 .form-send {
     display: flex;
-    justify-content: center;
+    @media screen and (min-width:480px) and (max-width:1199px){
+        flex-direction: column;
     align-items: center;
+    &__label {
+        display: block;
+        max-width: 450px;
+        width: 95%;
+        margin-bottom: 20px;
+    }    
+    }    
 }
-
 
 .form-send__btn {
     display: flex;
@@ -96,8 +129,6 @@
     &:focus {
     cursor: pointer;
 }
-
-
 }
 
 .form-send__discr {
@@ -108,10 +139,9 @@
     line-height: 1.87;
 }
 
-
 .form-send__input {
     display: block;
-    width: 358px;
+    width: 95%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -119,4 +149,8 @@
     padding: 15px 0 15px 16px;
     outline: transparent;
     color: var(--primary-bg-color);
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
 }
+

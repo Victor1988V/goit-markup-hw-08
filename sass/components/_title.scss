@@ -2,6 +2,7 @@
     @media screen and (min-width:480px) and (max-width:1199px){
         font-size: 26px;
         line-height: 1.61;
+        max-width: 360px;
     }
     @media screen and (min-width:1200px) {
         font-size: 44px;
@@ -61,5 +62,8 @@
     
     .three-title--footer {
         color: var(--primary-bg-color);
+        @media screen and (min-width:1200px){
+            text-align: start;
+        }
     }
     
