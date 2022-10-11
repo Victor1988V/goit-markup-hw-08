@@ -1,5 +1,6 @@
 .backdrop {
     position: fixed;
+    overflow-y: auto;
     left: 0;
     top: 0;
 
@@ -21,6 +22,13 @@
 }
 
 .modal {
+    @media screen  and (min-width:320px){
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 450px;
+    }
+    
+
     position: absolute;   
     top: 50%;
     left: 50%;
@@ -63,6 +71,11 @@
 
 
 .form__text {
+    @media screen  and (min-width:320px){
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 370px;
+    }
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -73,6 +86,13 @@
 }
 
 .form {
+    @media screen  and (min-width:320px) {
+     box-sizing: border-box;
+    width: 100%;
+    max-width: 370px;
+    height: 609px;
+    }
+
     position: relative;
     width: 448px;
     margin-left: auto;
@@ -98,9 +118,20 @@
     }    
 }
 
-
+.form__filed.form__filed--textarea{
+    @media screen  and (min-width:320px){
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 370px;    
+    }
+}
 
 .form__filed {
+    @media screen  and (min-width:320px){
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 370px;
+    }
     position: relative;
     display: flex;
     flex-direction: column;
@@ -112,13 +143,14 @@
     &:focus-visible {
         border-color: var(--accent-color);
     }
-
-
 }
 
-
-
 .form__input {
+    @media screen  and (min-width:320px){
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 370px;    
+    }
     padding-left: 42px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -132,10 +164,13 @@
         cursor: pointer;
     }
 
-
-
+    &{
+        color: var(--primary-text-color);
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;    
+    }
 }
-
 
 .form__icon {
     position: absolute;
@@ -155,17 +190,14 @@
     }
 }
 
-
-
-.form__input{
-    color: var(--primary-text-color);
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-
-}
-
 .form__label {
+    @media screen  and (min-width:320px){
+        box-sizing: border-box;
+     width: 100%;
+     max-width: 370px;
+    }
+    
+
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -174,6 +206,11 @@
 }
 
 .comment__form {
+    @media screen  and (min-width:320px){
+        box-sizing: border-box;
+        font-size: 12px;
+        line-height: 1.16;
+    }
     display: flex;
     align-items: center;
     justify-content: center;

@@ -56,32 +56,28 @@
             <li class="nav-mobile-contact__item"><a href="mailto:info@devstudio.com" class="nav-mobile-contact__link">info@devstudio.com</a></li> 
                                 
                     <ul class="social-mob">
-                        <div class="social-mob__item-wrapper">
+                        
                         <li class="social-mob__item">
                             <a href="#" class="social-mob__link" target="_blank" aria-label="instagram">
                                 Instagram
                             </a>
                         </li>
-                    </div>
-                    <div class="social-mob__item-wrapper">
                         <li class="social-mob__item">
                             <a href="#" class="social-mob__link" target="_blank" aria-label="twitter">
                                 Twitter
                             </a>
                         </li>
-                    </div>
-                    <div class="social-mob__item-wrapper">
                         <li class="social-mob__item">
                             <a href="#" class="social-mob__link" target="_blank" aria-label="facebook">
                                 Facebook
                             </a>
                         </li>
-                    </div> 
-                        <li class="social-mob__item">
+                        <li class="social-mob__item social-mob__item--none">
                             <a href="#" class="social-mob__link" target="_blank" aria-label="linkedin">
                                 Linkedin
                             </a>
                         </li>
+                        
                     </ul>                   
         </ul>
 
@@ -127,7 +123,16 @@
         <div class="container">
             
         <ul class="work-list">
-            <li class="work-list__item"><img src="./images/imgone.jpg" alt="works at a computer" width="370">
+            <li class="work-list__item"><img 
+                src="./images/work/box 1.jpg" 
+                srcset="./images/work/box 1.jpg w370,
+                ./images/work/box 1@2x.jpg 740,
+                ./images/work/box2.jpg w370,
+                ./images/work/box2-@2x.jpg w740,
+                ./images/work/box3.jpg w370,
+                ./images/work/box3-@2x.jpg w740"
+                
+                alt="works at a computer" width="370">
             <div class="work-list__wrapper"><p class="three-title three-title--work">Десктопні додатки</p></div></li>
             <li class="work-list__item"><img src="./images/imgtwo.jpg" alt="works at a computer" width="370"><div class="work-list__wrapper"><p class="three-title three-title--work">Мобільні додатки</p></div></li>
             <li class="work-list__item"><img src="./images/imgthree.jpg" alt="works at a computer" width="370"><div class="work-list__wrapper"><p class="three-title three-title--work">Дизайнерські рішення</p></div></li>            
@@ -141,7 +146,16 @@
             <div class="container">
                     
             <ul class="person-list">
-                <li class="person-list__item"><img class="person-list__foto" src="./images/igor.jpg" alt="Ігор Дем'яненко" width="270">
+                <li class="person-list__item">
+
+                    <picture>
+            <source srcset="./images/team/person1-mob-480.jpg 450w, ./images/team/person1-mob480@2x.jpg 900w" type="image/jpg" media="(max-width:767px)">
+            <source srcset="./images/team/person1-tab.jpg 354w, ./images/team/person1-tab@2x.jpg 708w" type="image/jpg" media="(min-width:768px)">
+            <source srcset="./images/team/person1-desk.jpg 270w, ./images/team/person1-desk@2x.jpg 540w" type="image/jpg" media="(min-width:1200px)">            
+                    <img class="person-list__foto"                     
+                    src="./images/team/person1-desk.jpg"
+                    alt="Ігор Дем'яненко" >                    
+                </picture>
                     <div class="person-list__wrapper"><h3 class="three-title three-title--person">Ігор Дем'яненко</h3>
                     <p class="person-list__descr">Product Designer</p>
                     <ul class="social">
@@ -177,7 +191,16 @@
                 </div>
                     
                 </li>
-                <li class="person-list__item"><img class="person-list__foto" src="./images/olga.jpg" alt="Ольга Рєпіна" width="270">
+                <li class="person-list__item">
+                    
+                <picture>
+                    <source srcset="./images/team/person2-mob-480.jpg 450w, ./images/team/person2-mob-480@2x.jpg 900w" type="image/jpg" media="(max-width:767px)">
+                    <source srcset="./images/team/person2-tab.jpg 354w, ./images/team/person2-tab@2x.jpg 708w" type="image/jpg" media="(min-width:768px)">
+                    <source srcset="./images/team/person2-desk.jpg 270w, ./images/team/person2-desk@2x.jpg 540w" type="image/jpg" media="(min-width:1200px)">         
+                    <img class="person-list__foto" 
+                    src="./images/team/person2-desk.jpg"                     
+                    alt="Ольга Рєпіна">
+                </picture>
                     <div class="person-list__wrapper"><h3 class="three-title three-title--person">Ольга Рєпіна</h3>
                     <p class="person-list__descr">Frontend Developer</p>   
                     <ul class="social">
@@ -213,7 +236,17 @@
                 </div>
                    
                 </li>
-                <li class="person-list__item"><img class="person-list__foto" src="./images/kolya.jpg" alt="Микола Тарасов" width="270">
+                <li class="person-list__item">
+                    
+                <picture>
+                    <source srcset="./images/team/person3-mob-480.jpg 450w, ./images/team/person3-mob-480@2x.jpg 900w" type="image/jpg" media="(max-width:767px)">
+                    <source srcset="./images/team/person3-tab.jpg 354w, ./images/team/person3-tab@2x.jpg 708w" type="image/jpg" media="(min-width:768px)">
+                    <source srcset="./images/team/person3-desk.jpg 270w, ./images/team/person3-desk@2x.jpg 540w" type="image/jpg" media="(min-width:1200px)">
+                    <img class="person-list__foto" 
+                    src="./images/team/person3-desk.jpg"
+                    alt="Микола Тарасов">
+                </picture>
+
                     <div class="person-list__wrapper"><h3 class="three-title three-title--person">Микола Тарасов</h3>
                     <p class="person-list__descr">Marketing</p> 
                     <ul class="social">
@@ -249,7 +282,27 @@
                 </div>
                    
                 </li>
-                <li class="person-list__item"><img class="person-list__foto" src="./images/miha.jpg" alt="Михайло Єрмаков" width="270">
+                <li class="person-list__item">
+                    
+                <picture>
+                    <source srcset="./images/team/person4-mob-480.jpg 450w, ./images/team/person4-mob-480@2x.jpg 900w" type="image/jpg" media="(max-width:767px)">
+                    <source srcset="./images/team/person4-tab.jpg 354w, ./images/team/person4-tab@2x.jpg 708w" type="image/jpg" media="(min-width:768px)">
+                    <source srcset="./images/team/person4-desk.jpg 270w, ./images/team/person4-desk@2x.jpg 540w" type="image/jpg" media="(min-width:1200px)">
+                    <img class="person-list__foto" 
+                    src="./images/team/person4-desk.jpg" 
+                    alt="Михайло Єрмаков">
+                </picture>
+                    
+                    <!-- <img class="person-list__foto" 
+                    src="./images/team/person4-desk.jpg" 
+                    srcset="./images/team/person4-desk.jpg 270w,
+                    ./images/team/person4-desk@2x.jpg 540w,
+                    ./images/team/person4-mob-480.jpg 450w,
+                    ./images/team/person4-mob-480@2x.jpg 900w,
+                    ./images/team/person4-tab.jpg 354w,
+                    ./images/team/person4-tab@2x.jpg 708w"
+                    sizes="(min-width:1200px) 270px 30vw, (min-width:768px) 354px 33vw, (max-width:767px) 450px 80vw"
+                    alt="Михайло Єрмаков"> -->
                     <div class="person-list__wrapper"><h3 class="three-title three-title--person">Михайло Єрмаков</h3>
                     <p class="person-list__descr">UI Designer</p> 
                     <ul class="social">
@@ -339,8 +392,10 @@
 </main>
 
 <footer class="footer section">        
-
         <div class="container container-footer">
+
+          <div class="footer-tabl">
+
             <div class="logo-footer"><a href="./index.html" class="logo logo-footer"><span          class="accent">Web</span>Studio</a>
             <address class="address-footer">
                 <ul class="address-footer__list">
@@ -385,6 +440,7 @@
                 </li>
             </ul>
         </div>
+    </div>
         <div class="send-footer">
             <p class="three-title three-title--footer">Підпишіться на розсилку</p>
             <form class="form-send">
@@ -398,7 +454,8 @@
                     </button>
                 
             </form>
-         </div>        
+             </div>
+                 
         </div>        
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -448,7 +505,7 @@
                         <svg class="icon__check" width="16" height="16">
                              <use href="./images/sprite.svg#icon-check"></use>
                         </svg>
-                Погоджуюся з розсилкою та приймаю <a class="checkbox__link" href="">Умови договору</a></label>
+               <span> Погоджуюся з розсилкою та приймаю <a class="checkbox__link" href="">Умови договору</a></span></label>
 
                 <button class="button button__submit" type="submit">Відправити</button> 
              </form>                
