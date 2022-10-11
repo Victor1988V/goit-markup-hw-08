@@ -26,6 +26,9 @@
     width: 100%;
     height: 4px;
     background: var(--accent-color);
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 }
 
 .current {

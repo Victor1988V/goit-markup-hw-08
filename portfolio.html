@@ -26,7 +26,7 @@
                    <nav class="nav">  
                        <ul class="nav__list">
                           <li class="nav__item"><a href="./index.html" class="nav__link">Студія</a></li> 
-                           <li class="nav__item"><a href="./portfolio.html" class="nav__link  current">Портфоліо</a></li>
+                           <li class="nav__item"><a href="./portfolio.html" class="nav__link current">Портфоліо</a></li>
                            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
                        </ul>
                    </nav>
@@ -37,12 +37,57 @@
                    </ul>            
                </div>
               </div>
+               <div class="mobile-menu js-menu-container" id="mobile-menu">
+                       <button class="mob-btn-close js-close-menu" type="button">
+                           <svg class="header__svg" aria-label="переключатель мобильного меню" width="30" height="30">
+                               <use class="header-btn__close" href="./images/sprite.svg#icon-close_mob"></use>
+                               </svg>
+                       </button>
+                   <nav class="nav-mobile">  
+                       <ul class="nav-mobile__list">
+                       <li class="nav-mobile__item"><a href="./index.html" class="nav-mobile__link">Студія</a></li> 
+                           <li class="nav-mobile__item"><a href="./portfolio.html" class="nav-mobile__link current">Портфоліо</a></li>
+                           <li class="nav-mobile__item"><a href="" class="nav-mobile__link">Контакти</a></li>
+                       </ul>
+                   </nav>
+                   
+                   <ul class="nav-mobile-contact">              
+                       <li class="nav-mobile-contact__item item"><a href="tel:+380961111111" class="nav-mobile-contact__link-tel">+38 096 111 11 11</a></li>
+                       <li class="nav-mobile-contact__item"><a href="mailto:info@devstudio.com" class="nav-mobile-contact__link">info@devstudio.com</a></li> 
+                                           
+                               <ul class="social-mob">
+                                   
+                                   <li class="social-mob__item">
+                                       <a href="#" class="social-mob__link" target="_blank" aria-label="instagram">
+                                           Instagram
+                                       </a>
+                                   </li>
+                                   <li class="social-mob__item">
+                                       <a href="#" class="social-mob__link" target="_blank" aria-label="twitter">
+                                           Twitter
+                                       </a>
+                                   </li>
+                                   <li class="social-mob__item">
+                                       <a href="#" class="social-mob__link" target="_blank" aria-label="facebook">
+                                           Facebook
+                                       </a>
+                                   </li>
+                                   <li class="social-mob__item social-mob__item--none">
+                                       <a href="#" class="social-mob__link" target="_blank" aria-label="linkedin">
+                                           Linkedin
+                                       </a>
+                                   </li>
+                                   
+                               </ul>                   
+                   </ul>
+           
+               </div>
            </div>
            
                </div>
                </div>
-               </header>
-                   <main>
+        </header>
+                              <main>
     <section class="section">
     <h1 class="hidden">Наші роботи</h1>
     
@@ -54,8 +99,8 @@
             <li class="filter__item"><button type="button" class="button portfolio-button">Маркетинг</button></li>
         </ul>
     
-    
-            <ul class="portfolio container">
+    <div class="container">
+            <ul class="portfolio">
                 <li class="portfolio__item"><a href="" class="portfolio__link"><div class="portfolio__wrapper"><div class="portfolio__overlay"><p class="text__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div><img src="./images/technokryc.jpg" alt="Технокряк" width="370"></div><div class="portfolio__text"><h2 class="portfolio-second-title">Технокряк</h2><p class="portfolio__discr">Веб-сайт</p></div></a></li>
 
                 <li class="portfolio__item"><a href="" class="portfolio__link"><div class="portfolio__wrapper"><div class="portfolio__overlay"><p class="text__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div><img src="./images/neworlean.jpg" alt="New Orlean" width="370"></div><div class="portfolio__text"><h2 class="portfolio-second-title">Постер New Orlean vs Golden Star</h2><p class="portfolio__discr">Дизайн</p></div></a>
@@ -82,6 +127,7 @@
                 <li class="portfolio__item"><a href="" class="portfolio__link"><div class="portfolio__wrapper"><div class="portfolio__overlay"><p class="text__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div><img src="./images/business.jpg" alt="Growing Business" width="370"></div><div class="portfolio__text"><h2 class="portfolio-second-title">Growing Business</h2><p class="portfolio__discr">Додаток</p></div></a>
                 </li>
             </ul>
+        </div>
     </section>
 </main>
 
@@ -152,6 +198,6 @@
              
     </div>        
 </footer>
-
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

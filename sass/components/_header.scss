@@ -183,6 +183,7 @@
 
 .mobile-menu {
     position: fixed;
+    z-index: 2;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -238,7 +239,10 @@
     line-height:1.17;
     letter-spacing: 0.02em;
     color: #2196F3;;
-    
+    @media screen and (min-width:300px) and (max-width:380px) {
+        font-size: 27px;
+
+    }
     
 }
 
@@ -306,4 +310,3 @@
 .nav-mobile-contact__item {
     margin-bottom: 64px;
 }
-
