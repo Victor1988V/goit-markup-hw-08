@@ -51,7 +51,7 @@
         // padding-top: 118px;
         // padding-bottom: 118px;
         background-size: cover;
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),url("/images/hero/Header960.jpg");
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),url("../images/hero/Header960.jpg");
 }
 
 
@@ -69,7 +69,7 @@
     (min-resolution: 2dppx) {
         
         @media screen and (max-width: 767px) {
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),url("/images/hero/Header 480@2x.jpg");
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),url("../images/hero/Header480@2x.jpg");
         }
 
     @media screen and (min-width: 768px) {
