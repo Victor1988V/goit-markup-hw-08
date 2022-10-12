@@ -7,6 +7,7 @@
     @media screen and (min-width:1200px) {
         font-size: 44px;
         line-height: 1.36;
+        width: 696px;
 
     }
     margin-top: 0;
@@ -39,6 +40,10 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+}
+
+.three-title--left{
+    text-align: left;
 }
 
 .three-title--work {
