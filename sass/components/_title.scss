@@ -43,7 +43,12 @@
 }
 
 .three-title--left{
-    text-align: left;
+    @media screen and (min-width:310px){
+        text-align: center;
+    }
+    @media screen and (min-width:768px) {
+        text-align: left;
+    }
 }
 
 .three-title--work {

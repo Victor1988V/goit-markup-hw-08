@@ -362,8 +362,15 @@ a {
   text-transform: uppercase;
 }
 
-.three-title--left {
-  text-align: left;
+@media screen and (min-width: 310px) {
+  .three-title--left {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .three-title--left {
+    text-align: left;
+  }
 }
 
 .three-title--work {
