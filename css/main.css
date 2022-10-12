@@ -1759,6 +1759,7 @@ a {
 }
 
 .portfolio__text {
+  text-align: left;
   padding: 20px 24px;
 }
 
