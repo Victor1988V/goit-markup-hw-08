@@ -1897,8 +1897,8 @@ a {
   content: "";
   left: 0;
   bottom: 0;
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
   border-radius: 2px;
   width: 100%;
   height: 4px;
