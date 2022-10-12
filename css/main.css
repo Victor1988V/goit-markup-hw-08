@@ -1659,6 +1659,9 @@ a {
     margin: -15px;
   }
 }
+.portfolio__item {
+  border: 1px solid #EEEEEE;
+}
 @media screen and (max-width: 767px) {
   .portfolio__item {
     max-width: 450px;
@@ -1669,7 +1672,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .portfolio__item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 64px) / 2);
     margin: 15px;
   }
 }
